@@ -1,9 +1,8 @@
-
 const container = document.getElementById("messages-container")
 
 async function loadMessages(){
 
-  const response = await fetch("/data/messages.json")
+  const response = await fetch("./data/messages.json")
 
   const messages = await response.json()
 
